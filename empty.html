@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="shortcut icon" href="#">
+    </header>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="src/w3.css">
+    <style>
+        .mySlides {
+            display:none;
+            animation-name: fadeInOut;
+            animation-duration: 1s; 
+        }
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+        body{background-color: #302e2e;}
+    </style>
+    <body>
+        <div class="w3-content n2Slider w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="src/images/low-poly/AdventureGirl.png" style="width:100%">
+            <img class="mySlides" src="src/images/low-poly/Assets.png" style="width:100%">
+            <img class="mySlides" src="src/images/low-poly/EnemyTank.png" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(this, 1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(this, 2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(this, 3)"></span>
+            </div>
+        </div>
+        <div class="w3-content n2Slider w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="src/images/low-poly/Viking.png" style="width:100%">
+            <img class="mySlides" src="src/images/low-poly/Viking_bow.png" style="width:100%">
+            <img class="mySlides" src="src/images/low-poly/log.png" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(this, 1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(this, 2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(this, 3)"></span>
+            </div>
+        </div>
+        <script src="src/slide.js"></script>
+    </body>
+</html>
